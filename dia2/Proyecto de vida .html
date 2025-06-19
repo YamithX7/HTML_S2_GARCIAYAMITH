@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOJA DE VIDA</title>
+    <style>
+        /* Estilos Generales del Cuerpo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em 0;
+            line-height: 1.6;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            width: 900px;
+            max-width: 95%;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            display: grid;
+            grid-template-columns: 300px 1fr; /* Columna izquierda más angosta */
+            gap: 20px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Columnas */
+        .left-column, .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Cajas de Contenido */
+        .box {
+            border: 1px solid #000000;
+            padding: 20px;
+        }
+
+        /* Estilos de los Títulos */
+        h3 {
+            text-align: center;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            color: #000;
+        }
+
+        h4 {
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        /* Columna Izquierda */
+        .photo-placeholder {
+            width: 180px;
+            height: 180px;
+            border: 2px solid #000000;
+            border-radius: 50%;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+        }
+
+        .personal-info p, .contact-info p {
+            margin: 8px 0;
+            color: #555;
+            word-wrap: break-word;
+        }
+
+        .personal-info strong, .contact-info strong {
+            color: #000;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding: 15px 0;
+        }
+
+        .icon-placeholder {
+            width: 45px;
+            height: 45px;
+            border: 1px solid #000000;
+        }
+
+        .icon-circle {
+            border-radius: 50%;
+        }
+
+        .icon-star {
+            font-size: 2.8em;
+            text-align: center;
+            line-height: 45px;
+            border: none;
+        }
+
+        /* Columna Derecha */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .academic-info li, .skills-info li {
+            margin-bottom: 8px;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+        }
+
+        .project-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-item p {
+            margin: 0 0 8px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-column">
+            <div class="box">
+                <div class="photo-placeholder" title="Espacio para tu fotografía"></div>
+            </div>
+            <div class="box personal-info">
+                <h3>Información Personal</h3>
+                <p><strong>Nombre:</strong> Yamith Santiago Garcia Espinel</p>
+                <p><strong>Dirección:</strong> BGA, COL</p>
+                <p><strong>Email:</strong> <a href="mailto:[tu.email@example.com]">yamitsantiago777@gmail.com</a></p>
+                <p><strong>Link Github:</strong> <a href="https://github.com/[tu_usuario]" target="_blank">https://github.com/YamithX7</a></p>
+                <p><strong>Linkedin:</strong> <a href="https://linkedin.com/in/[tu_usuario]" target="_blank">https://www.linkedin.com/in/yamith-garc%C3%ADa-1486b82ba/</a></p>
+            </div>
+            <div class="box social-icons">
+                <div class="icon-placeholder icon-circle"></div>
+                <div class="icon-star">&#9734;</div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="box academic-info">
+                <h3>Información Académica</h3>
+                <ul>
+                    <li><strong>Básica Primaria:</strong> SANTA TERESITA</li>
+                    <li><strong>Secundaria:</strong> INSTITUCION EDUCATIVA PROVENZA</li>
+                    <li><strong>Pregrado:</strong> [] - []</li>
+                    <li><strong>Postgrado:</strong> [] - []</li>
+                    <li><strong>Cursos:</strong> []</li>
+                    <li><strong>Diplomados:</strong> []</li>
+                </ul>
+            </div>
+            <div class="box skills-info">
+                <h3>Habilidades</h3>
+                <h4>Stack Tecnológico</h4>
+                <ul>
+                    <li><strong>Python:</strong> Basic</li>
+                    <li><strong>HTML5 & CSS3:</strong> Intermedio</li>
+                    <li><strong>JavaScript:</strong> Básico</li>
+                    <li><strong>SQL:</strong> Básico</li>
+                    </ul>
+            </div>
+            <div class="box projects-info">
+                <h3>Proyectos Personales</h3>
+                <div class="project-item">
+                    <h4>[Nombre del Proyecto 1]</h4>
+                    <p><strong>Stack Tecno:</strong> [ React, Node.js, Firebase]</p>
+                    <p><strong>Descripción:</strong> [Es una hoja de vida]</p>
+                    <p><strong>Nivel:</strong> [Ej: Desplegado, En desarrollo, Concepto]</p>
+                </div>
+                <hr>
+                <h3>Proyectos Empresariales</h3>
+                <div class="project-item">
+                     <h4>[Nombre del Proyecto o Cargo en la Empresa]</h4>
+                     <p><strong>Stack Tec:</strong> [Tecnologías utilizadas en el entorno profesional]</p>
+                     <p><strong>Descrip:</strong> [Describe tus responsabilidades, las tareas que realizaste y el objetivo del proyecto.]</p>
+                     <p><strong>Logros:</strong> [Menciona logros cuantificables. Ej: "Optimicé la consulta a la base de datos, reduciendo el tiempo de carga en un 30%".]</p>
+                </div>
+            </div>
+             <div class="box contact-info">
+                <h3>Contactos</h3>
+                <p><strong>Nombre:</strong> Yamith Garcia</p>
+                <p><strong>Email:</strong> <a href="mailto:[email.contacto@example.com]">yamitsantiago777@gmail.com</a></p>
+                <p><strong>Teléfono:</strong> 3103686627</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
