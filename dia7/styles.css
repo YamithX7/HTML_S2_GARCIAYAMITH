@@ -1,0 +1,259 @@
+/* --- Variables y Estilos Generales --- */
+:root {
+    --bg-color: #0d0d0d;
+    --text-color: #ffffff;
+    --accent-color: #d1a96c;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: #000;
+    padding: 12px 28px;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e6bf8c;
+}
+
+/* --- Header / Navegación --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+header nav a {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* --- Hero Section --- */
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    padding: 0 5%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-coffee-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* --- Info Sections (Our Story, Perfect Place) --- */
+.info-section {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 8rem 10%;
+    min-height: 70vh;
+}
+
+.info-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-image {
+    flex: 1;
+}
+
+.info-image img {
+    border-radius: 5px;
+    max-width: 400px; /* Limita el tamaño de la imagen */
+}
+
+.info-text {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.info-text h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.info-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 450px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title-container .line {
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+
+/* --- Products Section --- */
+#products {
+    padding: 6rem 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 2rem;
+    margin-top: 6rem;
+}
+
+.product-card {
+    border: 2px solid var(--accent-color);
+    padding: 6rem 2rem 2rem 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -60px; /* Mueve la imagen hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid var(--bg-color);
+}
+
+.product-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+}
+
+.product-card ul {
+    list-style: none;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.divider {
+    width: 100px;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 8rem auto 0 auto;
+}
+
+/* --- Footer --- */
+footer {
+    padding: 0 10%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer-col h3 {
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid #222;
+    font-size: 0.9rem;
+    color: #aaa;
+}
